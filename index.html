@@ -1,21 +1,24 @@
+
 <!doctype html>
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="description" content="모든 교회를 위한 온라인기도실">
-		<meta name="author" content="온라인기도실">
-		<meta name="generator" content="온라인 기도실">
-			<!-- <meta property="og:url" content="<?=($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'])?>" />  -->
-		<meta property="og:type" content="website" /> 
-		<meta property="og:image" content="https://pgsixt.github.io/15/15.png" />
-		<meta property="og:title" content="온라인 기도실" />  
-		<meta property="og:description" content="어디에나 계신 주님과 지금 여기에" />
-		 
-		<!-- CSS only -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+	
+		<meta property="og:type" content="website" />
+		<!-- 썸네일 주소 -->
 		
-		<link rel="stylesheet" href="https://wessch.cafe24.com/us/prayer.css">
+		<meta property="og:image" content="http://ministry.ssch.net/prayer/picture/og/10.png" /> 
+		<meta property="og:title" content="온라인 기도실" />  
+		<meta property="og:description" content="" />
+ 
+ 
+		<!-- CSS only -->
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href='https://wessch.cafe24.com/us/prayer.css'/>
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 		
 		<!-- JS, Popper.js, and jQuery -->
 		
@@ -27,371 +30,750 @@
 		
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
- 		
-		<title>온라인 기도실</title>
 		
+		
+		<title>온라인 기도실</title>
 	</head>
 	<body>
-		
-		
-		
-		
-		<div class="container-sm  justify-content-center  h-100" >   
-			<div class="row d-flex justify-content-center align-items-center " id='main_fr'>
-				
-				<audio  id='aup' src="https://pgsixt.github.io/14/20201206_prayer_bgm.mp3" style='display:none' type="audio/mp3" ></audio> 
-				
-				
-				
-				<!--   maincard 단위로 슬라이드가 구분됩니다.     -->
+		<style>
+			.maincard {
+			display:none; 			
+			}
+			.byline {
+			visibility:hidden; 	
+			
+			}
+			h6 {
+			color:#ffffff;
+			
+			}
+			.allpage {
+			display:none;
+			}
+			#divbg {
+			min-height: 100%;
+			background-color: #000;
+			
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			}
+			
+			/*#bg { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; }*/
+			
+			#bg_son { 
+			position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; width:100%; 
+			pointer-events: none;
+			
+			margin:0px;
+			padding:0px;
+			z-index:0;
+			
+			}
+			
+			.embed-responsive  {
+			opacity: 1;
+			}
+			.blur {
+			background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+			backdrop-filter: blur(8px); // This be the blur
+			height: 100vh;
+			width: 50%;
+			}
+			@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
+			#main_fr {
+			
+			font-family: 'NotoSerifKR';
+			}
+			
+			
+			
+			BODY {
+			min-height: 100%;
+			background-color: #000;
+			
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			
+		 
+			iframe{
+			filter: grayscale(0%);
+			
+			}
 			 
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/cover1.jpg" data-desktop="https://pgsixt.github.io/15/crossroom4.jpg">
-
-줄바꿈::
-줄바꿈::
-줄바꿈::
-줄바꿈::
-줄바꿈::
-줄바꿈::
-줄바꿈::
-===
-<h4 class='text-center'><b class='colyel churchname'> </b>온라인 기도실</h4>
-	<h6 class='text-center text-white'>그들로 하나가 되게</h6>
- 
----
-  
-시작버튼:: 
-</div>
-
-<div class='maincard clearfix'  data-bg="https://pgsixt.github.io/15/15_morning_way_light.jpg" data-desktop="https://pgsixt.github.io/15/15_path.jpg">
-
-제목::[기도,] [[그 여정을 시작하며]]
-===
-설명*::이곳은 주님께 나아가는 자리입니다.
-설명*::30분 정도 여유를 갖고 하시길 바랍니다.
-설명*::말씀과 묵상, 찬양과 기도로 함께 합니다.
-설명*::하단의 버튼을 누르면 다음 기도제목으로 넘어갑니다.
----
-줄바꿈::
-
-중간본문::[성령님]께서 우리의 기도를 인도해 주십니다. 도우심을 구하며 기도를 시작합니다.
-줄바꿈::
-오른쪽작은본문::준비가 되면, 아래의 [버튼]을 눌러주세요. 
-줄바꿈::
-다음버튼::기도로 나아가며
-
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_piano.jpg" >
-줄바꿈::
-
-제목::[찬양], [[마음을 열며]]
-===
-설명*::찬양의 가사를 천천히 읽어 봅시다.
----
-중간본문::아버지여 구하오니 이제 이 땅 고쳐주소서
-중간본문::우리 맘 엮으사 주의 영광 나타내소서
-중간본문::만유의 주님 온 세상 알도록
-줄바꿈::
-중간본문::목소리 합쳐 주께 영광 돌리며
-중간본문::주님의 통치 선포하게 하소서
-중간본문::목소리 합쳐 주님을 찬양하며
-중간본문::이제 하나가 되게 하소서
-
-다음버튼::다음
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_piano.jpg">
-
-중간본문::함께 주를 찬양하며 이제 우리 마음 합치세
-중간본문::주 예수 그 이름 온 땅 위에 높이 들리리
-중간본문::만유의 주님 온 세상 보도록
-줄바꿈::
-중간본문::목소리 합쳐 주께 영광 돌리며
-중간본문::주님의 통치 선포하게 하소서
-중간본문::목소리 합쳐 주님을 찬양하며
-중간본문::이제 하나가 되게 하소서
-줄바꿈::
-
-
-줄바꿈::
-오른쪽작은본문::아버지여 구하오니 (CBS)
-
-유튜브::nLgtFgVeY30
-
-줄바꿈::
-
-<button type="submit"   class="btn btn-warning btn_next float-right" name="button" data-kill='#if1' onclick='aup.play();' >다음</button>
-
- </div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_dark_night_moon.jpg">
-
-제목::[말씀], [[우리의 시선을 두고]]
----
-설명*::말씀을 천천히 여러 번 읽습니다.
-설명*::본문은 요한복음17:9-14 말씀입니다.
----
-중간본문::9 내가 그들을 위하여 비옵나니 내가 비옵는 것은 세상을 위함이 아니요 [내게 주신 자들]을 위함이니이다 그들은 아버지의 것이로소이다
-줄바꿈::
-중간본문::10 내 것은 다 아버지의 것이요 아버지의 것은 내 것이온데 내가 [그들로 말미암아] 영광을 받았나이다
-줄바꿈::
-중간본문::11 나는 세상에 더 있지 아니하오나 그들은 세상에 있사옵고 나는 아버지께로 가옵나니 거룩하신 아버지여 내게 주신 아버지의 이름으로 [그들을 보전하사] 우리와 같이 그들도 [하나가 되게 하옵소서]
-
-
-다음버튼::계속
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_dark_night_moon.jpg">
-
-제목::[말씀], [[우리의 시선을 두고]]
-===
-설명*::조금은 천천히, 한 단어씩 예수님의 기도를 따라 읽습니다.
----
-중간본문::12 내가 그들과 함께 있을 때에 내게 주신 아버지의 이름으로 그들을 보전하고 지키었나이다 그 중의 하나도 멸망하지 않고 다만 멸망의 자식뿐이오니 이는 성경을 응하게 함이니이다
-줄바꿈::
-중간본문::13 지금 내가 아버지께로 가오니 내가 세상에서 이 말을 하옵는 것은 그들로 내 기쁨을 그들 안에 충만히 가지게 하려 함이니이다
-줄바꿈::
-중간본문::14 내가 아버지의 말씀을 그들에게 주었사오매 [세상이 그들을 미워하였사오니] 이는 내가 세상에 속하지 아니함 같이 그들도 세상에 속하지 아니함으로 인함이니이다
-오른쪽작은본문::말씀을 충분히 읽은 후 넘어갑니다.
-
-다음버튼::아멘
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_beam_mountain.jpg" data-desktop="https://pgsixt.github.io/15/15_beam_field.jpg">
-
-
-제목::[그들로] [[말미암아]]
-===
-설명*::말씀을 새기며 기도합니다.
----
-중간본문::예수님은 최후의 순간까지 제자들을 사랑하셨습니다.
-줄바꿈::
-중간본문::연약한 제자들, 곧 떠나게 될 제자들이지만, 하나님께서 허락해 주신 제자들에 대하여 감사하십니다.
-줄바꿈::
-중간본문::우리를 통해 영광받으셨다고 말씀하시는 예수님께 감사의 기도를 드립시다.
-
-줄바꿈::
-
-다음버튼::다음
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_baby_hand.jpg">
-
- 
-제목::[아버지의] [[이름으로 보전하사]]
-===
-설명*::말씀을 새기며 기도합니다.
----
-
-중간본문::아버지의 이름으로 지켜달라는 것은 아버지의 소유로 삼으신다는 뜻입니다.
-줄바꿈::
-중간본문::하나님께서 인생을 붙잡아 주시고 지켜주셔야 세상에서 승리할 수 있습니다.
-줄바꿈::
-중간본문::우리를 아버지의 이름으로 지켜주시고, 보전하여 주시길 기도합시다.
-줄바꿈::
-
-다음버튼::다음
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_baby_hand.jpg">
-
-
-
-
-제목:: [내게] [[주신 자들]]
-
-===
-설명*::우리에게 맡겨진 이들이 있습니다.
----
-
-중간본문::예수님께서 아버지의 소유인 자들을 위해 기도하셨듯이 우리에게 주신 사람들이 있습니다.
-줄바꿈::
-중간본문::주님께서 우리에게 주신 자들을 붙잡아 주시길 기도합시다.
-줄바꿈::
-가운데작은본문::[가족, 구역 식구들과 연약한 이웃들을 위하여]
-줄바꿈::
-다음버튼::다음
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_red_cross.jpg" data-desktop="https://pgsixt.github.io/15/15_bluecross.jpg">
-
-제목::  [하나가] [[되게 하옵소서]]
-===
-설명*:: 제자 공동체인<b class='colyel churchname'>우리 교회 </b>를 위해 기도합시다.
----
-중간본문::주님은 성부, 성자, 성령이 하나이듯, 모든 제자들이 하나가 되길 기도하십니다.
-줄바꿈::
-중간본문::제자들에게 필요한 것은 [‘나’]가 아니라 [‘우리’ ‘함께’ ‘서로’] 입니다. 우리가 하나 되지 못하면 하나님의 영광을 볼 수 없습니다.
-줄바꿈::
-중간본문::주님의 몸된 우리 교회가 온전히 하나되게 하소서.
-줄바꿈::
-가운데작은본문::[서로 사랑함으로 교회 안의 여러 문제들을 넘어서게 하소서]
-<h5 class='prayer_text'></h5>
-
-
-다음버튼::다음
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_night_city.jpg" >
-제목:: [세상이] [[미워하였사오니]]
-===
-설명*::한국 교회를 위해 기도합시다.
----
-
-
-중간본문::세상은 자기에게 속하지 않는 자들을 미워합니다. 교회는 미움받을 수 밖에 없습니다. 
-줄바꿈::
-중간본문::그럼에도 우리는, [하나님이 세상을 이처럼 사랑]하셨다[[[요3:16]]] 는 복음을 들었습니다. 
-줄바꿈::
-중간본문::세상의 미움 속에도 서로 사랑하며, 사랑을 전하는 한국교회되게 하소서
-줄바꿈::
-다음버튼::다음
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_cloud_warm.jpg">
-
-제목::[기도문], [[사라피온]]
-===
-설명*::믿음의 사람들의 기도문을 소리내어 읽습니다.
----
-중간본문::살아있는 순전한 손을 이 백성의 머리 위에 펴소서. 
-중간본문::유일하신 아들, 죄악을 깨뜨리고 모든 거룩한 것들을 세우시고 지키시는 그 분의 손을 이 백성 머리 위에 펼치소서. 
-줄바꿈::
-중간본문::이 백성이 성령의 복을 받게 하소서, 
-중간본문::하늘의 복을 받게 하소서, 
-중간본문::예언자들과 사도들의 복을 받게 하소서.
-줄바꿈::
-중간본문:: 이 백성 모든 몸들이 스스로 가눌 수 있고 
-중간본문::온전해지도록 복을 받게 하소서. 
-
-다음버튼::계속
-
-
-
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_cloud_warm.jpg">
-
-중간본문::그들의 영혼들이 배움과 지식 
-중간본문::그리고 신비로움의 복을 받게 하소서. 
-중간본문::그들 모두 동일하게 복을 받게 하소서.
-줄바꿈::
-중간본문::당신의 독생자 예수 그리스도를 통하여 
-중간본문::성령 안에 영광과 권능이 하나님께 
-중간본문::지금과 세세 영원토록 있을지어다.
-줄바꿈::
-오른쪽작은본문::Barrett-Lennard, (번역 김정)
-오른쪽작은본문::[The Sacramentary of Sarapion of Thmuis], 17-18. 
-
----
-작은본문::[사라피온 예식서]는 현존하는 가장 오랜 기도집으로 4세기 이집트교회의 주일예배와 세례, 성찬, 안수예식 등에 사용한 기도문을 담고 있습니다. 저자는 이집트 트무이스(Thmuis) 지방의 주교였던 사라피온(Bishop Sarapion)으로 알려져 있습니다. 
-작은본문::출처:김정. (2016). 사라피온 예식서. 장신논단, 48(2), 151-174.
-줄바꿈::
-다음버튼::아멘
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/manstar10.jpg"  data-desktop="https://pgsixt.github.io/15/14_many_star.jpg">
-
-
-
-제목::[기다림], [[주님의 뜻을 기다리며]]
-===
-설명*::주님이 우리에게 주시는 마음이 있는지 살펴봅시다.
-설명*::억지로 생각을 짜내지 않고, 침묵합니다.
-설명*::모든 생각이 주님의 것은 아닙니다. 떠오른 것 중에는 내 생각와 욕구, 할 일도 있습니다. 자연스러운 과정이니 괜찮습니다. 
----
-
-가운데작은본문::예수께서 대답하여 이르시되
-가운데중간본문:: 시몬아 내가 네게 이를 말이 있다 하시니
-줄바꿈::
-가운데중간본문:: 그가 이르되 선생님 [말씀하소서] 
-
-
-가운데작은본문::누가복음 7:40
-줄바꿈::
-줄바꿈::
-가운데중간본문::고요한 가운데 잠시 침묵합니다.
-다음버튼::다음
-
-</div>
-
-<div class='maincard clearfix' data-bg="http://ministry.ssch.net/prayer/write.jpg">
-
-제목::[한 줄 기도문], [[마음을 분별하며]]
-===
-설명*::기도 가운데 떠올린 생각이나 마음, 감사 제목이나 새롭게 드린 기도를 한 줄로 기록합니다.
-설명*::생각난 부분은 다음 기도 시간에 기도하십시오.
-
- 
-<input type='text' placeholder="내게 주신 마음..." class='oneline' id='ip_confess' />
-
-줄바꿈::
-중간본문::억지로 적지 않아도 됩니다. 주님 안에 거한 것으로 충분합니다.
-
-다음버튼::다음
-
- 
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/ochestra.jpg">
-
-제목::[감사], [[간구를 들으신 주님께 ]]
-===
-설명*::기도를 인도하신 주님께 감사를 올려드립니다.
-설명*:: 하나님께서 우리의 기도를 듣고 영화롭게 하십니다.
-설명*::아래의 구절을 읽고, 감사를 올려드립니다.
----
-가운데중간본문:: 여호와께 노래하라 
-가운데중간본문::너희는 여호와를 찬양하라 
-가운데중간본문::가난한 자의 생명을 
-가운데중간본문::행악자의 손에서 구원하셨음이니라
-
-
-줄바꿈::
-가운데작은본문::예레미야 20:13
-줄바꿈::
-다음버튼::감사합니다
-
-</div>
-
-<div class='maincard clearfix' data-bg="https://pgsixt.github.io/15/15_field_3.jpg" data-desktop="https://pgsixt.github.io/15/15_field_3_wide.jpg">
-
-제목::[파송], [[세상을 향하여 ]]
-===
-가운데중간본문::오늘의 온라인 기도는 마쳤습니다.
-줄바꿈::
-가운데중간본문::주님께서 함께 하십니다.
-줄바꿈::
-가운데중간본문::세상을 향하여 나아가시기 바랍니다.
-줄바꿈::
-
-줄바꿈::
-<a  class="btn btn-warning  float-right btn-block"  id='btn_end' >한 걸음 내딛으며</a>
-</div>
-
-
+		</style>
+		
+		
+		<div style='width:100% ' id='divbg'>
+			
+			<audio  id='aup' src="" style='display:none' type="audio/mp3" ></audio> 
+			
+			<audio  id='aup1' src="" style='display:none' type="audio/mp3" ></audio> 
+			
+			<audio  id='aup2' src="" style='display:none' type="audio/mp3" ></audio> 
+			
+			<audio  id='aup3' src="" style='display:none' type="audio/mp3" ></audio> 
+			
+			
+			<div class="container   justify-content-center  h-100" >  
 				
 				
-			</div>
+				
+				<div class="row d-flex justify-content-center align-items-center " id='main_fr' style='z-index:1'>
+					
+					
+					
+					<!-- <div class="fixed-bottom "><p class='text-white' id='p_nav'></p></div> -->
+					
+					<div   id='c1' class='text-center maincard flex-nowrap clearfix col-md-10 mx-auto row'>
+						
+						
+						
+						
+						
+					</div>
+					
+					
+				</div>
+				
+				
+			</div><!-- END OF ROW -->
 		</div>
-		
-		<script src='https://wessch.cafe24.com/us/room3.js'></script> 
 		<script>
+			//aup2.src='http://media5.dimode.co.kr/ssch/40days/bible/.mp3';
+			
+			var now_sec=60;
+			
+			String.prototype.replaceAll = function(org, dest) {
+			return this.split(org).join(dest);
+			}
+			
+			var now_user_data={};
+			
+			var user_token='fOvE9zXCljm6V0Z8bxkcKhdTDahEPgoh_TbTto1X';
+			
+			var now_room_date="";  //기본 값은 2월 17일
+			
+			if( localStorage.getItem('user_name')!==null) {   // 이전에 성경통독으로 로그인했다면
+			now_user_data.user_name=localStorage.getItem('user_name');  // 불러온다
+			now_user_data.user_phone=localStorage.getItem('user_phone');
+			}
+			
+			
+			
+			
+			var fade_settimer_id=0;
+			
+			
+			var all_slide=["","\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/pgsixt.github.io\/15\/crossroom4.jpg\n\n<!-- \n \n\uc378\ub124\uc77c::http:\/\/ministry.ssch.net\/prayer\/picture\/og\/10.png\n-->\n\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n===\n\uac00\uc6b4\ub370\uc81c\ubaa9::[\ub0a8\uad11\uad50\ud68c] \uae30\ub3c4\uc2e4\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::[\uae30\ub3c4]\uc758 \uc131\ubcbd\uc744 \uc7ac\uac74\ud558\ub77c \n\n---\n\n\uc2dc\uc791\ubc84\ud2bc:: \n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/reserve\/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80\r\n\uc81c\ubaa9::[\uae30\ub3c4,][[ \uadf8 \uc5ec\uc815\uc744 \uc2dc\uc791\ud558\uba70]]\r\n===\r\n\uc124\uba85*::\uc774\uacf3\uc740 \uc8fc\ub2d8\uaed8 \ub098\uc544\uac00\ub294 \uc790\ub9ac\uc785\ub2c8\ub2e4.\r\n\uc124\uba85*::30\ubd84 \uc815\ub3c4 \uc5ec\uc720\ub97c \uac16\uace0 \ud558\uc2dc\uae38 \ubc14\ub78d\ub2c8\ub2e4.\r\n\uc124\uba85*::\ub9d0\uc500\uacfc \ubb35\uc0c1, \ucc2c\uc591\uacfc \uae30\ub3c4\ub85c \ud568\uaed8 \ud569\ub2c8\ub2e4.\r\n\uc124\uba85*::\ud558\ub2e8\uc758 \ubc84\ud2bc\uc744 \ub204\ub974\uba74 \ub2e4\uc74c \uae30\ub3c4\uc81c\ubaa9\uc73c\ub85c \ub118\uc5b4\uac11\ub2c8\ub2e4.\r\n---\r\n\uc904\ubc14\uafc8::\r\n\r\n\uc911\uac04\ubcf8\ubb38::[\uc131\ub839\ub2d8]\uaed8\uc11c \uc6b0\ub9ac\uc758 \uae30\ub3c4\ub97c \uc778\ub3c4\ud574 \uc8fc\uc2ed\ub2c8\ub2e4. \ub3c4\uc6b0\uc2ec\uc744 \uad6c\ud558\uba70 \uae30\ub3c4\ub97c \uc2dc\uc791\ud569\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc624\ub978\ucabd\uc791\uc740\ubcf8\ubb38::\uc900\ube44\uac00 \ub418\uba74, \uc544\ub798\uc758 [\ubc84\ud2bc]\uc744 \ub20c\ub7ec\uc8fc\uc138\uc694. \r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\uae30\ub3c4\ub85c \ub098\uc544\uac00\uba70\r\n\r\n\r\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1605815679696-da33ac43e055?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80\r\n\uc904\ubc14\uafc8::\r\n\r\n\uc81c\ubaa9::[\ucc2c\uc591], [[\ub9c8\uc74c\uc744 \uc5f4\uba70]]\r\n===\r\n\uc124\uba85*::\ucc2c\uc591\uc758 \uac00\uc0ac\ub97c \ucc9c\ucc9c\ud788 \uc77d\uc5b4 \ubd05\uc2dc\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 [\uc601\uad11\uc758 \uc655 ]\r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 \ud3c9\uac15\uc758 \uc655\r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 \ud558\ub298\uacfc \ub545\uc758 \uc8fc \r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 \uc815\uc758\uc758 \uc544\ub4e4\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\ucc9c\uc0ac\uac00 \uacbd\ubc30\ud558\ub124 \uc608\ubc30\ud558\uace0 \ucc2c\uc591\ud558\ub124\r\n\uc911\uac04\ubcf8\ubb38::\uc601\uc6d0\ud55c \uc0dd\uba85 \ub9d0\uc500 \r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 [\uc608\uc218 \uadf8\ub9ac\uc2a4\ub3c4 \uc8fc]\r\n\r\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\r\n\r\n","\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1605815679696-da33ac43e055?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80\n\n\uc911\uac04\ubcf8\ubb38::\ud638\uc0b0\ub098 \ub2e4\uc717\uc758 \uc790\uc190\uaed8\n\uc911\uac04\ubcf8\ubb38::\ud638\uc0b0\ub098 \ubd88\ub7ec \uc655\uc911\uc758 \uc655\n\uc904\ubc14\uafc8::\n\uc911\uac04\ubcf8\ubb38::\ub192\uc740 \ud558\ub298\uc5d0 \uc601\uad11\uc744 \n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uc608\uc218 \uc8fc \uba54\uc2dc\uc544\ub124\n\uc904\ubc14\uafc8::\n\n\uc624\ub978\ucabd\uc791\uc740\ubcf8\ubb38::- \ub2f9\uc2e0\uc740 \uc601\uad11\uc758 \uc655 (FAITH WORSHIP)\n\n\uc720\ud29c\ube0c::8urvtlrzn_0\n\n\uc904\ubc14\uafc8::\n\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\n\n ","\r\n\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1566437036079-0e00cc9ea796?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1275&q=80\r\n\r\n\uc81c\ubaa9::[\ub9d0\uc500], [[\uc6b0\ub9ac\uc758 \uc2dc\uc120\uc744 \ub450\uace0]]\r\n---\r\n\uc124\uba85*::\ub9d0\uc500\uc744 \ucc9c\ucc9c\ud788 \uc5ec\ub7ec \ubc88 \uc77d\uc2b5\ub2c8\ub2e4.\r\n\uc124\uba85*::\ubcf8\ubb38\uc740 \uc608\uc218\ub2d8\uaed8\uc11c \uc81c\uc790\ub4e4\uc744 \ub5a0\ub098\uc2dc\uae30\uc804\uc5d0 \ud558\uc2e0 \uae30\ub3c4\uc785\ub2c8\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::1 \uc608\uc218\uaed8\uc11c \uc774 \ub9d0\uc500\uc744 \ud558\uc2dc\uace0 [\ub208\uc744 \ub4e4\uc5b4] \ud558\ub298\uc744 \uc6b0\ub7ec\ub7ec \uc774\ub974\uc2dc\ub418 \r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc544\ubc84\uc9c0\uc5ec \ub54c\uac00 \uc774\ub974\ub800\uc0ac\uc624\ub2c8 [\uc544\ub4e4\uc744 \uc601\ud654\ub86d\uac8c] \ud558\uc0ac \uc544\ub4e4\ub85c \uc544\ubc84\uc9c0\ub97c \uc601\ud654\ub86d\uac8c \ud558\uac8c \ud558\uc635\uc18c\uc11c \r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::2 \uc544\ubc84\uc9c0\uaed8\uc11c \uc544\ub4e4\uc5d0\uac8c \uc8fc\uc2e0 \ubaa8\ub4e0 \uc0ac\ub78c\uc5d0\uac8c \uc601\uc0dd\uc744 \uc8fc\uac8c \ud558\uc2dc\ub824\uace0 [\ub9cc\ubbfc\uc744 \ub2e4\uc2a4\ub9ac\ub294 \uad8c\uc138]\ub97c \uc544\ub4e4\uc5d0\uac8c \uc8fc\uc168\uc74c\uc774\ub85c\uc18c\uc774\ub2e4 \r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::3 \uc601\uc0dd\uc740 \uace7 \uc720\uc77c\ud558\uc2e0 \ucc38 \ud558\ub098\ub2d8\uacfc \uadf8\uac00 \ubcf4\ub0b4\uc2e0 \uc790 \uc608\uc218 \uadf8\ub9ac\uc2a4\ub3c4\ub97c \uc544\ub294 \uac83\uc774\ub2c8\uc774\ub2e4 \r\n\ub2e4\uc74c\ubc84\ud2bc::\uacc4\uc18d\r\n\r\n","\r\n\r\n\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1566437036079-0e00cc9ea796?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1275&q=80\r\n\r\n\uc81c\ubaa9::[\ub9d0\uc500], [[\uc6b0\ub9ac\uc758 \uc2dc\uc120\uc744 \ub450\uace0]]\r\n===\r\n\uc124\uba85*::\uc870\uae08\uc740 \ucc9c\ucc9c\ud788, \ud55c \ub2e8\uc5b4\uc529 \uc608\uc218\ub2d8\uc758 \uae30\ub3c4\ub97c \ub530\ub77c \uc77d\uc2b5\ub2c8\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::4 \uc544\ubc84\uc9c0\uaed8\uc11c \ub0b4\uac8c \ud558\ub77c\uace0 \uc8fc\uc2e0 \uc77c\uc744 \ub0b4\uac00 \uc774\ub8e8\uc5b4 \uc544\ubc84\uc9c0\ub97c [\uc774 \uc138\uc0c1\uc5d0\uc11c \uc601\ud654\ub86d\uac8c] \ud558\uc600\uc0ac\uc624\ub2c8 \r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::5 \uc544\ubc84\uc9c0\uc5ec \ucc3d\uc138 \uc804\uc5d0 \ub0b4\uac00 \uc544\ubc84\uc9c0\uc640 \ud568\uaed8 \uac00\uc84c\ub358 \uc601\ud654\ub85c\uc368 \uc9c0\uae08\ub3c4 \uc544\ubc84\uc9c0\uc640 \ud568\uaed8 \ub098\ub97c \uc601\ud654\ub86d\uac8c \ud558\uc635\uc18c\uc11c \r\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::- \uc694\ud55c\ubcf5\uc74c 17:1-5\r\n\uc904\ubc14\uafc8::\r\n\uc624\ub978\ucabd\uc791\uc740\ubcf8\ubb38::\ub9d0\uc500\uc744 \ucda9\ubd84\ud788 \uc77d\uc740 \ud6c4 \ub118\uc5b4\uac11\ub2c8\ub2e4.\r\n\ub2e4\uc74c\ubc84\ud2bc::\uc544\uba58\r\n\r\n","\r\n\r\n\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1507495214200-1c8c09e60758?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80\r\n\r\n\uc81c\ubaa9::[\uc608\uc218 \uadf8\ub9ac\uc2a4\ub3c4\ub97c] [[\uc544\ub294 \uac83]]\r\n\r\n===\r\n\uc124\uba85*::\uc601\uc6d0\ud55c \uc0dd\uba85\ubcf4\ub2e4 \ub354 \uadc0\ud55c \uac83\uc740 \uc5c6\uc2b5\ub2c8\ub2e4.\r\n\uc124\uba85*:: \uc608\uc218 \uadf8\ub9ac\uc2a4\ub3c4\ub97c \uc544\ub294 \uac83\uc774 \uc601\uc6d0\ud55c \uc0dd\uba85\uc785\ub2c8\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::\uc601\uc6d0\ud55c \uc0dd\uba85\uc744 \uac00\uc84c\ub2e4\ub294 \uc774\ub4e4\uc774 \ub354 \ub9ce\uc740 \uac83\uc744 \uc6d0\ud558\uba70, \uc601\uc0dd\uc774 \uc5c6\ub294 \uc790\ub4e4\uacfc \uac19\uc740 \uac83\uc744 \uac08\uad6c\ud569\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc6b0\ub9ac \uc548\uc5d0 [\uc601\uc0dd]\uc774 \uc788\ub2e4\uba74, \uc6b0\ub9ac\uac00 \uc6d0\ud558\ub294 \uac83\uc740 \ub2ec\ub77c\uc838\uc57c \ud569\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc8fc\ub2d8\uc744 \ub354\uc6b1 [\uc54c\uac8c \ud558\uc2dc\uace0], \uc601\uc0dd\uc73c\ub85c \ub9cc\uc871\ud558\uac8c \ud558\uc18c\uc11c.\r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\r\n\r\n","\n\n\ucef4\ud4e8\ud130\ubc30\uacbd::https:\/\/images.unsplash.com\/photo-1438032005730-c779502df39b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80\n\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1557008075-7f2c5efa4cfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjY0MTJ8MHwxfGNvbGxlY3Rpb258MXw2MDkzMTAyM3x8fHx8Mnx8MTYyNjQ4Njg1MA&ixlib=rb-1.2.1&q=80&w=1080\n\n\n\uc81c\ubaa9::  [\ub208\uc744 \ub4e4\uc5b4] [[\ud558\ub298\uc744 \uc6b0\ub7ec\ub7ec]]\n===\n\uc124\uba85*::\ub9d0\uc500\uc744 \uc0c8\uae30\uba70 \uae30\ub3c4\ud569\ub2c8\ub2e4.\n---\n\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38:: \uc608\uc218\ub2d8\uc758 \ub208\uc740 \uc5b8\uc81c\ub098 \ud558\ub298\uc5d0 \uacc4\uc2e0 \ud558\ub098\ub2d8\uc744 \ud5a5\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\n\uc904\ubc14\uafc8::\n\uc911\uac04\ubcf8\ubb38::\uc774\ub294 \uae30\ub3c4\ub97c \ub4e3\uace0 \uacc4\uc2e0 \ud558\ub098\ub2d8\uc5d0 \ub300\ud55c \ud655\uc2e0\uc774 \uc788\uc5c8\uc2b5\ub2c8\ub2e4.\n\uc904\ubc14\uafc8::\n\uc911\uac04\ubcf8\ubb38::\uc6b0\ub9ac\uc758 \uc2dc\uc120\uc774 \ud558\ub298\uc744 \ud5a5\ud558\uba70, \uc8fc\ub2d8\uc744 \ud5a5\ud55c \ud655\uc2e0\uc744 \uac16\uac8c \ud558\uc18c\uc11c.\n\uc904\ubc14\uafc8::\n\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\n\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1519456615053-6180d1abb1ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80\r\n\r\n \r\n\uc81c\ubaa9::[\uc544\ub4e4\uc744] [[\uc601\ud654\ub86d\uac8c]]\r\n===\r\n\uc124\uba85*::\ub9d0\uc500\uc744 \uc0c8\uae30\uba70 \uae30\ub3c4\ud569\ub2c8\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::\uc138\uc18d\uc801 \uc131\uacf5\uc774 \uc601\uad11\uc744 \ub73b\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uc6b0\ub9ac\ub294 [\uc774\ubbf8 \uc601\ud654\ub86d\uac8c \ucc3d\uc870\ub41c] \uc790\ub4e4\uc785\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38:: \ud558\ub098\ub2d8\uaed8\uc11c \uc6b0\ub9ac \uc0b6\uc744 \ub2e4\uc2a4\ub9ac\uc2e4 \ub54c,  \uc6b0\ub9ac\ub294 \uc601\uad11\uc744 \uacbd\ud5d8\ud558\uac8c \ub429\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38:: \uc0b6\uc758 \ubaa8\ub4e0 \uc790\ub9ac\uc5d0 \uc8fc\ub2d8\uc758 \uc601\uad11\uc774 \uc784\ud558\uac8c \ud558\uc18c\uc11c\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::[\uc77c\ud130, \uac00\uc815, \uc790\ub140, \uad00\uacc4,  \uc9c4\ub85c\uc5d0\uc11c]\r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\r\n","\r\n\r\n\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1563804951831-49844db19644?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1286&q=80\r\n \r\n\uc81c\ubaa9::  [\ub9cc\ubbfc\uc744] [[\ub2e4\uc2a4\ub9ac\ub294 \uad8c\uc138]]  \r\n===\r\n\uc124\uba85*:: \ub098\ub77c\uc640 \ubbfc\uc871\uc744 \uc704\ud574, \ubaa8\ub4e0 \ub2e4\uc2a4\ub9ac\ub294 \uc790\ub4e4\uc744 \uc704\ud574 \uae30\ub3c4\ud569\uc2dc\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::\uc608\uc218\ub2d8\uc758 \uad8c\uc138\ub294 \ubaa8\ub4e0 \uc0ac\ub78c\uc5d0\uac8c [\uc601\uc0dd\uc744 \uc8fc\uae30 \uc704\ud55c] \uad8c\uc138\uc600\uc2b5\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uadf8\ub7ec\ub098 \uc774 \ub545\uc758 \uad8c\uc138\ub294 \ud0c0\ub77d\ud558\uc5ec,  [\uad8c\uc138 \uc790\uccb4\uac00 \ubaa9\uc801]\uc774 \ub418\uc5c8\uc2b5\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc774 \ub545\uc758 \ud0c0\ub77d\ud55c \uad8c\uc138\ub4e4\uc774 \uc0c8\ub85c\uc6cc\uc9c0\uba70 \uc0dd\uba85\uc744 \uc0b4\ub9ac\ub294 \uad8c\uc138\uac00 \ub418\uac8c \ud558\uc18c\uc11c\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::[\ubaa8\ub4e0 \uc704\uc815\uc790\ub4e4\uc744 \uc704\ud574, <br\/>\uc6b0\ub9ac\uac00 \uc18d\ud55c \uc870\uc9c1\uc758 \ucc45\uc784\uc790\ub4e4\uc744 \uc704\ud574]\r\n\r\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\r\n","","\r\n\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1572203176799-40836603681d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80\r\n \r\n\uc81c\ubaa9::  [\uc544\ubc84\uc9c0\ub97c] [[\uc601\ud654\ub86d\uac8c]]  \r\n===\r\n\uc124\uba85*::\uc0b0\uc131\uad50\ud68c\ub97c \uc704\ud574 \uae30\ub3c4\ud569\uc2dc\ub2e4.\r\n---\r\n\r\n\uc911\uac04\ubcf8\ubb38::\uc608\uc218\ub2d8\uc740 \uc0ac\uba85\uc744 \uac10\ub2f9\ud568\uc73c\ub85c \r\n\uc911\uac04\ubcf8\ubb38::\uc544\ubc84\uc9c0\ub97c \uc601\ud654\ub86d\uac8c \ud558\uc168\uc2b5\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uad50\ud68c\ub3c4 \ub9e1\uaca8\uc9c4 \uc0ac\uba85\uc744 \uc774\ub8e8\uc5b4 \uac08 \ub54c\r\n\uc911\uac04\ubcf8\ubb38::\uc8fc\ub2d8\uc744 \uc601\ud654\ub86d\uac8c \ud569\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc0b0\uc131\uad50\ud68c\uac00 [\uc9c0\uae08, \uc5ec\uae30\uc5d0\uc11c] \r\n\uc911\uac04\ubcf8\ubb38::\uc0ac\uba85\uc744 \uac10\ub2f9\ud558\uba70 \uc8fc\ub2d8\uc744 \uc601\ud654\ub86d\uac8c \ud558\ub294 \uad50\ud68c\ub418\uac8c \ud558\uc18c\uc11c.\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::[\uc9c0\uc5ed\uc0ac\ud68c \uc18d\uc5d0\uc11c \uc5ed\ud560\uc744 \uac10\ub2f9\ud558\ub3c4\ub85d]\r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\r\n\r\n \r\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1583308436934-0e97c9992c6b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1125&q=80\r\n\r\n\uc81c\ubaa9::[\uae30\ub3c4\ubb38], [[\ub85c\ub80c\uc2a4 \ud615\uc81c]]\r\n===\r\n\uc124\uba85*::\ubbff\uc74c\uc758 \uc0ac\ub78c\ub4e4\uc758 \uae30\ub3c4\ubb38\uc744 \uc18c\ub9ac\ub0b4\uc5b4 \uc77d\uc2b5\ub2c8\ub2e4.\r\n---\r\n\uc911\uac04\ubcf8\ubb38::\ud558\ub098\ub2d8\r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc740 \uc5b8\uc81c\ub098 \uc81c \uac00\uae4c\uc774 \uacc4\uc2ed\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc81c\uac00 \uc0b4\uc544\uac00\uba70 \uacaa\ub294 \ubaa8\ub4e0 \uc77c\ub4e4\uc774\r\n\uc911\uac04\ubcf8\ubb38::\uc624\uc9c1 \ub2f9\uc2e0\uaed8 \ubc14\uce58\ub294\r\n\uc911\uac04\ubcf8\ubb38::\uc21c\uc885\uc774\uae30\ub97c \uc6d0\ud569\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\ud558\uc9c0\ub9cc, \uc81c\uac00 \uadf8\ub7ec\uace0\uc790 \ud560 \ub54c\uc5d0,\r\n\uc911\uac04\ubcf8\ubb38::\ub2f9\uc2e0\uc758 \uc784\uc7ac\ub97c \uc740\ucd1d\uc73c\ub85c \ub0b4\ub824\uc8fc\uc2ed\uc2dc\uc624.\r\n\ub2e4\uc74c\ubc84\ud2bc::\uacc4\uc18d\r\n\r\n\r\n\r\n\r\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1583308436934-0e97c9992c6b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1125&q=80\r\n\r\n\r\n\r\n\uc911\uac04\ubcf8\ubb38::\uc774\ub97c \uc774\ub8e8\uae30 \uc704\ud558\uc5ec, \r\n\uc911\uac04\ubcf8\ubb38::\uc81c\uac00 \ud558\ub294 \uc77c\uc744 \ub3c4\uc640\uc8fc\uc2dc\uace0\r\n\uc904\ubc14\uafc8::\r\n\uc911\uac04\ubcf8\ubb38::\uc77c\uc758 \uc5f4\ub9e4\ub97c \ub2f9\uc2e0\uaed8 \ubc14\uce58\uc624\ub2c8\r\n\uc911\uac04\ubcf8\ubb38::\ubc1b\uc544\uc8fc\uc2dc\uba70\r\n\uc911\uac04\ubcf8\ubb38::\uc5b8\uc81c \uc5b4\ub514\uc11c\ub098 \uc81c \uc0ac\ub791\uc744 \r\n\uc911\uac04\ubcf8\ubb38::\uc8fc\ub2d8\uaed8\ub85c \ud5a5\ud558\uac8c \ud558\uc5ec \uc8fc\uc18c\uc11c\r\n\uc904\ubc14\uafc8::\r\n\uc624\ub978\ucabd\uc791\uc740\ubcf8\ubb38::[\ub85c\ub80c\uc2a4 \ud615\uc81c], \\\"\uc138\uae30\uc758 \uae30\ub3c4\\\" (\uc774\ud604\uc8fc \uc5ed), 84\ucabd\r\n---\r\n\uc904\ubc14\uafc8::\r\n\uc791\uc740\ubcf8\ubb38::* \uc6d0\ubb38\uc5d0\ub294 [\ub2f9\uc2e0]\uc73c\ub85c \ub418\uc5b4 \uc788\uc73c\ub098 \uc5ec\uae30\uc11c\ub294 [\uc8fc\ub2d8]\uc73c\ub85c \uc77d\uc2b5\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\uc544\uba58\r\n\uc904\ubc14\uafc8::\r\n\uc904\ubc14\uafc8::\r\n\uc904\ubc14\uafc8::\r\n\uc791\uc740\ubcf8\ubb38::[\ub85c\ub80c\uc2a4]\ub294 18\ub144\uac04 \uad70\ubcf5\ubb34\ub97c \ub9c8\uce58\uace0 \uc218\ub3c4\uc6d0\uc5d0 \ud3c9\uc218\uc0ac\ub85c \ub4e4\uc5b4\uac14\uc2b5\ub2c8\ub2e4. \uac70\uae30\uc11c 40\ub144\uac04 \uc694\ub9ac\uc0ac\ub85c \uacf5\ub3d9\uccb4\ub97c \uc12c\uacbc\uace0, \uadf8\uac00 \uc8fd\uc740 \ud6c4\uadf8\uc758 \ud3b8\uc9c0\uc640 \uc9e7\uc740 \uae30\ub85d\ub4e4\uc774 \ubb36\uc5ec \\\"\ud558\ub098\ub2d8\uc758 \uc784\uc7ac\uc5f0\uc2b5\\\"\uc774\ub780 \ucc45\uc73c\ub85c \ubc1c\uac04\ub418\uc5c8\uc2b5\ub2c8\ub2e4. "," \n<!-- \n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1488866022504-f2584929ca5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1343&q=80\n-->\n\n\n\uc81c\ubaa9::[\uae30\ub2e4\ub9bc], [[\uc8fc\ub2d8\uc758 \ub73b\uc744 \uae30\ub2e4\ub9ac\uba70]]\n===\n\uc124\uba85*::\uc8fc\ub2d8\uc774 \uc6b0\ub9ac\uc5d0\uac8c \uc8fc\uc2dc\ub294 \ub9c8\uc74c\uc774 \uc788\ub294\uc9c0 \uc0b4\ud3b4\ubd05\uc2dc\ub2e4.\n\uc124\uba85*::\uc5b5\uc9c0\ub85c \uc0dd\uac01\uc744 \uc9dc\ub0b4\uc9c0 \uc54a\uace0, \uce68\ubb35\ud569\ub2c8\ub2e4.\n\uc124\uba85*::\ubaa8\ub4e0 \uc0dd\uac01\uc774 \uc8fc\ub2d8\uc758 \uac83\uc740 \uc544\ub2d9\ub2c8\ub2e4. \ub5a0\uc624\ub978 \uac83 \uc911\uc5d0\ub294 \ub0b4 \uc0dd\uac01\uc640 \uc695\uad6c, \ud560 \uc77c\ub3c4 \uc788\uc2b5\ub2c8\ub2e4. \uc790\uc5f0\uc2a4\ub7ec\uc6b4 \uacfc\uc815\uc774\ub2c8 \uad1c\ucc2e\uc2b5\ub2c8\ub2e4. \n---\n\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::\uc608\uc218\uaed8\uc11c \ub300\ub2f5\ud558\uc5ec \uc774\ub974\uc2dc\ub418\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38:: \uc2dc\ubaac\uc544 \ub0b4\uac00 \ub124\uac8c \uc774\ub97c \ub9d0\uc774 \uc788\ub2e4 \ud558\uc2dc\ub2c8\n\uc904\ubc14\uafc8::\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38:: \uadf8\uac00 \uc774\ub974\ub418 \uc120\uc0dd\ub2d8 [\ub9d0\uc500\ud558\uc18c\uc11c] \n\n\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::\ub204\uac00\ubcf5\uc74c 7:40\n\uc904\ubc14\uafc8::\n\uc904\ubc14\uafc8::\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uace0\uc694\ud55c \uac00\uc6b4\ub370 \uc7a0\uc2dc \uce68\ubb35\ud569\ub2c8\ub2e4.\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\n\n","\n\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/wessch.cafe24.com\/prayer\/write.jpg\n\n\uc81c\ubaa9::[\ud55c \uc904 \uae30\ub3c4\ubb38], [[\ub9c8\uc74c\uc744 \ubd84\ubcc4\ud558\uba70]]\n===\n\uc124\uba85*::\uae30\ub3c4 \uac00\uc6b4\ub370 \ub5a0\uc62c\ub9b0 \uc0dd\uac01\uc774\ub098 \ub9c8\uc74c, \uac10\uc0ac \uc81c\ubaa9\uc774\ub098 \uc0c8\ub86d\uac8c \ub4dc\ub9b0 \uae30\ub3c4\ub97c \ud55c \uc904\ub85c \uae30\ub85d\ud569\ub2c8\ub2e4.\n\uc124\uba85*::\uc0dd\uac01\ub09c \ubd80\ubd84\uc740 \ub2e4\uc74c \uae30\ub3c4 \uc2dc\uac04\uc5d0 \uae30\ub3c4\ud558\uc2ed\uc2dc\uc624.\n\n \n<input type=\\'text\\' placeholder=\\\"\ub0b4\uac8c \uc8fc\uc2e0 \ub9c8\uc74c...\\\" class=\\'oneline\\' id=\\'ip_confess\\' \/>\n<hr class=\\'nonfade\\'>\n\uc904\ubc14\uafc8::\n\uc911\uac04\ubcf8\ubb38::\uc5b5\uc9c0\ub85c \uc801\uc9c0 \uc54a\uc544\ub3c4 \ub429\ub2c8\ub2e4. \uc8fc\ub2d8 \uc548\uc5d0 \uac70\ud55c \uac83\uc73c\ub85c \ucda9\ubd84\ud569\ub2c8\ub2e4.\n\n\ub2e4\uc74c\ubc84\ud2bc::\ub2e4\uc74c\n\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1526475071263-8c3229e45624?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80\r\n\uc81c\ubaa9::[\uac10\uc0ac], [[\uac04\uad6c\ub97c \ub4e4\uc73c\uc2e0 \uc8fc\ub2d8\uaed8 ]]\r\n===\r\n\uc124\uba85*::\uae30\ub3c4\ub97c \uc778\ub3c4\ud558\uc2e0 \uc8fc\ub2d8\uaed8 \uac10\uc0ac\ub97c \uc62c\ub824\ub4dc\ub9bd\ub2c8\ub2e4.\r\n\uc124\uba85*:: \ud558\ub098\ub2d8\uaed8\uc11c \uc6b0\ub9ac\uc758 \uae30\ub3c4\ub97c \ub4e3\uace0 \uc601\ud654\ub86d\uac8c \ud558\uc2ed\ub2c8\ub2e4.\r\n\uc124\uba85*::\uc544\ub798\uc758 \uad6c\uc808\uc744 \uc77d\uace0, \uac10\uc0ac\ub97c \uc62c\ub824\ub4dc\ub9bd\ub2c8\ub2e4.\r\n---\r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38:: \uadf8\uc758 \uc774\ub984\uc758 \uc601\uad11\uc744 \ucc2c\uc591\ud558\uace0 \r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uc601\ud654\ub86d\uac8c \ucc2c\uc1a1\ud560\uc9c0\uc5b4\ub2e4\r\n\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc791\uc740\ubcf8\ubb38::\uc2dc\ud3b8 66:2\r\n\uc904\ubc14\uafc8::\r\n\ub2e4\uc74c\ubc84\ud2bc::\uac10\uc0ac\ud569\ub2c8\ub2e4\r\n\r\n","\r\n\ubc30\uacbd\uc0ac\uc9c4::https:\/\/images.unsplash.com\/photo-1534188339955-3c60da61fae0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1235&q=80\r\n\uc81c\ubaa9::[\ud30c\uc1a1], [[\uc138\uc0c1\uc744 \ud5a5\ud558\uc5ec ]]\r\n===\r\n\r\n\uc904\ubc14\uafc8::\r\n\uc904\ubc14\uafc8::\r\n\uc904\ubc14\uafc8::\r\n\r\n\r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uc624\ub298\uc758 \uc628\ub77c\uc778 \uae30\ub3c4\ub294 \ub9c8\ucce4\uc2b5\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uc8fc\ub2d8\uaed8\uc11c \ud568\uaed8 \ud558\uc2ed\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\uac00\uc6b4\ub370\uc911\uac04\ubcf8\ubb38::\uc8fc\ub2d8\uacfc \uc138\uc0c1\uc73c\ub85c \ub098\uc544\uac00\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4.\r\n\uc904\ubc14\uafc8::\r\n\r\n\uc904\ubc14\uafc8::\r\n<a  class=\\\"btn btn-warning  float-right btn-block\\\"  id=\\'btn_end\\' >\ud55c \uac78\uc74c \ub0b4\ub51b\uc73c\uba70<\/a>\r\n\n"];
+			var this_card={},next_Card={};
+			var nowobj={};
+			var kill_media="";
+			var start_card='c1';
+			var nowobj2='1';
+			var delaytime=2;
+			
+			//ar audio = new Audio('http://media5.dimode.co.kr/ssch/piano.mp3');
+			var oldVal="";
+			var imsiimg="";
+			var nowtime=Date.now();
+			
+			var bg_bright=50;
+			
+			var byline_intval=1500; 
+			
+			var check_result="|";
+			var bricknumber=1;
+			
+			
+			var my_confessdata="";
+			var my_name="";
+			var my_phone="";
+			
+			function isMobile() {
+			return navigator.userAgent.indexOf('Mobi') > -1;
+			}
+			
+			var now_slide_number='1';
+			if(now_slide_number>1) $('.maincard').removeClass('text-center');
+			
+			
+			$(document).ready(function(){
+			
+			
+			
+			$('#divbg').css("height",$('body').css('height'));
+			for(i=1;i<all_slide.length;i++) {
+			var img = new Image(); 
+			var img2 = new Image(); 
+			if(all_slide[i].indexOf("배경사진::")>0) img.src=all_slide[i].split("배경사진::")[1].split("\n")[0];
+			if(all_slide[i].indexOf("컴퓨터배경::")>0) img2.src=all_slide[i].split("컴퓨터배경::")[1].split("\n")[0];
+			}
+			console.log("preload img");
+			
+			$(".maincard").fadeOut();
+			make_slide(all_slide[now_slide_number++]);
+			$(".maincard").fadeIn('slow');
+			
+			
+			aup.loop=false;
+			//aup.volume=0.35;
+			aup3.loop=true;
+			aup2.loop=false;
+			
+			
+			$(document).on("click", ".btn_next", function(event){
+			
+			console.log(now_slide_number);
+			
+			
+			$(".maincard").fadeOut(1500,function () {
+			if($(this).closest('.maincard').find('#ip_confess').length>0) {
+			
+			my_confessdata=$('#ip_confess').val();
+			my_name=$('#ip_name').val().trim();
+			my_phone=$('#ip_phone').val().trim();
+			
+			send_data();
+			}
+			
+			
+			$('.maincard').removeClass('text-center');
+			make_slide(all_slide[now_slide_number++]);
+			
+			$(".maincard").fadeIn(1500);
+			
+			
+			});
+			
+			
+			});
+			
+			
+			$('body').css("backdrop-filter","brightness("+bg_bright+"%)");
+			
+			
+			if($('#'+start_card).data('bg')!==undefined) chage_background_img($('#'+start_card).data('bg')) ;
+			$('#'+start_card).show('slow'); 
+			$('#'+start_card).find(".byline").each(function (index) {
+			
+			
+			});
+			
+			
+			
+			if(!isMobile()) {
+			
+			$('#main_fr').addClass('h-100');
+			
+			} else {
+			
+			$('#main_fr').removeClass('align-items-center ');
+			$('#main_fr').css('padding-top','30px')
+			}
+			
+			
+			
+			
+			$(document).keyup(function(event){
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '13' ||keycode == '32') { 
+			
+			//if((document.activeElement+"").indexOf("ip") !== -1) {
+			
+			var nowfocusid=$(':focus').prop('id');
+			if(nowfocusid=='ip_confess') return;
+			if(nowfocusid=='ip_name') return;
+			if(nowfocusid=='ip_phone') return;
+			}
+			
+			});
+			
+			
+			$(document).on("click", "#btn_brick", function(event){
+			validation_by_server();
+			
+			});
+			
+			
+			$(document).on("click", "#btn_end", function(event){
+			self.opener=self;
+			self.close();
+			window.close();
+			window.open('','_self').close();  
+			
+			$(".maincard:last-child").fadeOut('slow',function() { 
+			document.getElementById('aup').volume=0
+			self.opener=self;
+			self.close();
+			window.close();
+			window.open('','_self').close();  
+			
+			if(navigator.userAgent.includes("KAKAO")) location.href = "kakaotalk://inappbrowser/close";
+			// alert(navigator.userAgent);
+			
+			});
+			});
+			
+			
+			
+			
+			});
+			function validation_by_server() {
+			$('#ip_name').val($('#ip_name').val().replaceAll(" ",""));
+			
+			if($('#ip_phone').val().length>0&&$('#ip_phone').val().length<4) return;
+			
+			
+			if($('#ip_name').val()==""&&$('#ip_phone').val()==""&&my_confessdata=="") {
+			
+			$(".maincard").fadeOut(1000,function () {
+			make_slide(all_slide[now_slide_number++]);
+			$(".maincard").fadeIn(800);
+			});
+			
+			
+			return;
+			}
+			
+			
+			
+			send_data();
+			
+			$(".maincard").fadeOut(1500,function () {
+			make_slide(all_slide[now_slide_number++]);
+			$(".maincard").fadeIn(1000);
+			});
+			
+			}
+			
+			
+			
+			
+			function send_data() {
+			
+			if($('#ip_name').val().trim()=="") bricknumber=0;
+			if($('#ip_phone').val().trim()=="") bricknumber=0;
+			/*
+			$.ajax({
+			url: "./data_db.php?oneline_ori="+encodeURI(my_confessdata)+"&pname="+encodeURI($('#ip_name').val().replaceAll(" ",""))+"&pnum="+$('#ip_phone').val().replaceAll(" ","")+"&notice="+encodeURI(check_result),
+			dataType: 'json',
+			type:"GET" 
+			});	
+			
+			*/
+			console.log('send_data');
+			$.ajax({
+			url: "./data_db.php", 
+			dataType: 'json',
+			type:"GET",
+			data: {
+			pnum:$('#ip_phone').val(),
+			pname:$('#ip_name').val(),
+			oneline_ori:my_confessdata,
+			room_date:now_room_date,
+			user_token:user_token
+			},
+			success: function(data) {
+			console.log(data);
+			}});
+			
+			
+			
+			}
+			
+			
+			function chage_background_img(img_name) {
+			console.log(img_name);
+			openFullScreenMode();
+			if(navigator.userAgent.indexOf('Tri')) {
+			
+			$('#divbg').css('background-image',"url("+img_name+")");
+			
+			
+			
+			} else {
+			$('#divbg').css('background-image',"url('"+img_name+"')");
+			//$('#bgimg').prop('src',img_name);
+			//bgimg
+			
+			/*
+			$('#bg_son').prop('src',img_name);
+			console.log($('#bg_son').prop('src'));
+			//bg_son
+			*/
+			}
+			
+			
+			
+			
+			}
+			
+			
+			
+			// 전체화면 설정
+			function openFullScreenMode() {
+			var docV = document.documentElement;
+			if (docV.requestFullscreen) 
+			docV.requestFullscreen();
+			else if (docV.webkitRequestFullscreen) // Chrome, Safari (webkit)
+			docV.webkitRequestFullscreen();
+			else if (docV.mozRequestFullScreen) // Firefox
+			docV.mozRequestFullScreen();
+			else if (docV.msRequestFullscreen) // IE or Edge
+			docV.msRequestFullscreen();
+			}
+			
+			// 전체화면 해제
+			function closeFullScreenMode() {
+			
+			}
+			
+			function last_fadeout() {
+			delaytime=15;
+			
+			setTimeout("$('body').css('backdrop-filter','brightness(0.4)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.35)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.3)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.25)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.20)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.15)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0.1)')",delaytime++*1000);
+			setTimeout("$('body').css('backdrop-filter','brightness(0)')",delaytime++*1000);
+			
+			setTimeout("aup.pause();"(delaytime+3)*1000);
+			
+			aup.loop=false;
+			
+			setTimeout("location.href = 'http://ssch.net'",(delaytime+15)*1000);
+			setTimeout("aup.pause();"(delaytime+3)*1000);
+			
+			
+			}
+			
+			
+			
+function make_slide(text) {
+			var nowtext=text;
+			
+			var nowhtml=nowtext;
+			var nowhtml_pic="";
+			var imsitag="";
+			var para_change=false;
+			var is_music_playing=true;
+			
+			//				$('.maincard').eq(0).html("");
 		
-		$('.maincard').addClass('col-md-10 mx-auto');
-		</script>
+					 
+					 
+			nowhtml=nowtext.replaceAll("슬라이드::\n","").replaceAll("===","<hr/>").replaceAll("---","<hr class='sm'>");
+			
+			nowhtml=nowhtml.replaceAll("$room_title","");
+			nowhtml=nowhtml.replaceAll("$room_date","");
+			nowhtml=nowhtml.replaceAll("$room_order","0");
+			
+			
+			nowhtml= tagconvert(nowhtml, "<h2 class='text-center incard h2center'>","</h2>","가운데제목::");
+			nowhtml= tagconvert(nowhtml, "<h2 class='text-right incard h2right'>","</h2>","오른쪽제목::");
+			
+			nowhtml= tagconvert(nowhtml, "<h2 class='incard h2'>","</h2>","제목::");
+			nowhtml=nowhtml.replaceAll("[[","<sub>");
+			nowhtml=nowhtml.replaceAll("]]","</sub>");
+			
+			nowhtml=nowhtml.replaceAll("[","<b class='colyel'>");
+			nowhtml=nowhtml.replaceAll("]","</b>");
+			nowhtml=nowhtml.replaceAll("줄바꿈::","<br/>");
+			
+			
+			nowhtml= tagconvert(nowhtml, "<li class='incard li'>","</li>","설명*::");
+			
+			nowhtml=tagconvert(nowhtml,"<button  class='btn btn-warning btn_next float-right' >","</button>","다음버튼::");
+			
+			
+			
+			nowhtml= tagconvert(nowhtml, "<h4 class='text-center incard h4center'>","</h4>","가운데큰본문::");
+			nowhtml= tagconvert(nowhtml, "<h5 class='text-center incard h5center'>","</h5>","가운데중간본문::");
+			nowhtml= tagconvert(nowhtml, "<h6 class='text-center incard h6center'>","</h6>","가운데작은본문::");
+			
+			
+			
+			nowhtml= tagconvert(nowhtml, "<h4 class='text-right incard h4right'>","</h4>","오른쪽큰본문::");
+			nowhtml= tagconvert(nowhtml, "<h5 class='text-right incard h5right'>","</h5>","오른쪽중간본문::");
+			nowhtml= tagconvert(nowhtml, "<h6 class='text-right incard h5right'>","</h6>","오른쪽작은본문::");
+			
+			
+			nowhtml= tagconvert(nowhtml, "<h6 class='incard h6'>","</h6>","작은본문::");
+			nowhtml= tagconvert(nowhtml, "<h5 class='incard h5'>","</h5>","중간본문::");
+			nowhtml= tagconvert(nowhtml, "<h4 class='incard h4'>","</h4>","큰본문::");
+			
+			nowhtml= nowhtml.replaceAll( "푸른시작버튼::","<button class='btn btn-info btn_next '>시작하기</button>");
+			nowhtml= nowhtml.replaceAll( "시작버튼::","<button class='btn btn-warning btn_next btn-block' onclick='void(0);'>시작하기</button>");
+			//===================================================
+			
+			nowhtml=nowhtml.replaceAll("1분벨::","	<button class='btn btn-outline-warning' onclick='void(0);' id='btn_bell'>종소리</button><b id='b_nowtime' class='text-warning'></b>");
+			
+			
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup1.play();' style='display:none;' >","</button>","숨은다음버튼함께음악1시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup1.pause();' style='display:none;' >","</button>","숨은다음버튼함께음악1멈춤::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup2.play();' style='display:none;' >","</button>","숨은다음버튼함께음악2시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup2.pause();' style='display:none;' >","</button>","숨은다음버튼함께음악2멈춤::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup3.play();' style='display:none;' >","</button>","숨은다음버튼함께음악3시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup3.pause();' style='display:none;' >","</button>","숨은다음버튼함께음악3멈춤::");
+			
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup1.play();'   >","</button>","다음버튼함께음악1시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup1.pause();'  >","</button>","다음버튼함께음악1멈춤::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup2.play();'  >","</button>","다음버튼함께음악2시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup2.pause();' >","</button>","다음버튼함께음악2멈춤::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup3.play();'   >","</button>","다음버튼함께음악3시작::");
+			nowhtml=tagconvert(nowhtml,"<button type='submit'   class='btn btn-warning btn_next float-right' name='button'  onclick='aup3.pause();'  >","</button>","다음버튼함께음악3멈춤::");
+			
+			
+			nowhtml=nowhtml.replaceAll("음악재생멈춤버튼::","<button class='btn btn-outline-warning  ' onclick='void(0);' id='btn_sermon'>일시 멈춤</button> ");
+			
+		 	nowhtml=nowhtml.replaceAll("단락시작::","<div class='word_change'>");
+			
+			
+			nowhtml=tagconvert(nowhtml,"<div class='word_change' data-time2='", "'>","단락시작과전환되는초::");
+			nowhtml=nowhtml.replaceAll("단락끝::","</div>");
+			 
+			if(nowhtml.indexOf("음악3설정::")>0) {
+			
+			var imsiSrc=nowhtml.split("음악3설정::")[1].split("\n")[0];
+				nowhtml=nowhtml.replaceAll("음악3설정::"+imsiSrc,"");
+				aup3.src=imsiSrc;
+				
+			}
+
+ 
+			if(nowhtml.indexOf("음악1설정::")>0) {
+			
+			var imsiSrc=nowhtml.split("음악1설정::")[1].split("\n")[0];
+				nowhtml=nowhtml.replaceAll("음악1설정::"+imsiSrc,"");
+				aup1.src=imsiSrc;
+				
+			}
+				if(nowhtml.indexOf("음악2설정::")>0) {
+			
+			var imsiSrc=nowhtml.split("음악2설정::")[1].split("\n")[0];
+				nowhtml=nowhtml.replaceAll("음악2설정::"+imsiSrc,"");
+				aup1.src=imsiSrc;
+				
+			}
+			
+			
+			
+			if(nowhtml.indexOf("음악2멈춤::")>0) {
+			 is_music_playing=false;
+			 
+			nowhtml=nowhtml.replaceAll("음악2멈춤::","");
+			 
+			
+			}
+			if(nowhtml.indexOf("단락전환시작::")>0) {
+			nowhtml=nowhtml.replaceAll("단락전환시작::","");
+			//setTimeout("change_para();",500);
+			para_change=true;
+			
+			
+
+			}
+			
+			
+			//==============================================
+			
+			
+			nowhtml=pictureconverter(nowhtml);
+			nowhtml=mediaconverter(nowhtml);
+			
+			
+			if(nowhtml.split("컴퓨터배경::").length>1 && !isMobile()) {
+				
+				nowhtml_pic=nowhtml.split("컴퓨터배경::")[1].split("\n")[0];
+				nowhtml=nowhtml.replace("컴퓨터배경::"+nowhtml_pic,"");
+				chage_background_img(nowhtml_pic);
+				
+				nowhtml_pic=nowhtml.split("배경사진::")[1].split("\n")[0];
+				nowhtml=nowhtml.replace("배경사진::"+nowhtml_pic,"");
+				
+				} else 	if(nowhtml.split("배경사진::").length>1) {
+				
+				nowhtml_pic=nowhtml.split("배경사진::")[1].split("\n")[0];
+				nowhtml=nowhtml.replace("배경사진::"+nowhtml_pic,"");
+				chage_background_img(nowhtml_pic);
+				
+			}
+			
+			if(nowhtml.split("컴퓨터배경::").length>1) {
+				nowhtml=nowhtml.replace("컴퓨터배경::"+nowhtml.split("컴퓨터배경::")[1].split("\n")[0],"");
+			}	
+			
+					 
+			clearTimeout(fade_settimer_id);
+			$('.maincard').eq(0).html(nowhtml);
+			
+			if(para_change) change_para();
+			if(!is_music_playing) aup2.pause();
+			
+			
+			fade_settimer_id=setTimeout("$('h2,li,hr').not('.nonfade').animate({ opacity: '0'},'slow')",18000);
+			//$('#if1').animate({opacity:0.8});
+			
+			if(nowhtml.indexOf("btn_end")>0) {
+				if(navigator.userAgent.indexOf('KAKAO')>0) {
+					$('#btn_end').prop('href',"kakaoweb://closeBrowser");
+					} else {
+					$('#btn_end').detach();
+					
+					
+				}
+			}
+		}
 		
-	</body>
+		
+		function tagconvert (fulltext, tag_start, tag_end,origintag) {
+			var imsihtmltext=fulltext;
+			var intag_content="";
+			
+			if(imsihtmltext.indexOf(origintag)==-1) return fulltext;
+			var cnt=0;
+			do {
+				cnt++;
+				
+				intag_content=imsihtmltext.split(origintag)[1].split("\n")[0];
+				
+				//imsihtmltext=imsihtmltext.replace(origintag+intag_content,tag_start.slice(0,-1)+" data-cnt='"+cnt+"'>"+intag_content+tag_end);
+				imsihtmltext=imsihtmltext.replace(origintag+intag_content,tag_start+intag_content+tag_end);
+				
+				
+				if(cnt>100) break;
+			} while (imsihtmltext.indexOf(origintag)>=0)
+			
+			return  imsihtmltext;
+			
+		}
+		
+		function mediaconverter(fulltext) {
+			
+			var imsihtmltext=fulltext;
+			var intag_content="";
+			var cnt=0;
+			
+			if(imsihtmltext.indexOf("유튜브::")==-1) return fulltext;
+			do { 
+				intag_content=imsihtmltext.split("유튜브::")[1].split("\n")[0];
+				
+				imsihtmltext=imsihtmltext.replace("유튜브::"+intag_content,"<div class='embed-responsive embed-responsive-16by9'><iframe id='if1'  class='embed-responsive-item' src='https://www.youtube.com/embed/"+intag_content+"'></iframe></div>");
+				
+				if(cnt++>100) break;
+			} while (imsihtmltext.indexOf("유튜브::")>=0)
+			
+			return  imsihtmltext;
+			
+			
+		}
+		
+		function pictureconverter (fulltext) {
+			var imsihtmltext=fulltext;
+			var intag_content="";
+			var cnt=0;
+			
+			if(imsihtmltext.indexOf("자료사진::")==-1) return fulltext;
+			do { 
+				intag_content=imsihtmltext.split("자료사진::")[1].split("\n")[0];
+				
+				imsihtmltext=imsihtmltext.replace("자료사진::"+intag_content,"<div class='text-center'><img src='"+intag_content+"'class='img-fluid ' alt='Responsive image' style='width:50%'/></div>");
+				if(cnt++>100) break;
+			} while (imsihtmltext.indexOf("자료사진::")>=0)
+			
+			return  imsihtmltext;
+			//$imsilist2="<div class='text-center'><img src='$this_title'class='img-fluid ' alt='Responsive image' style='width:50%'/></div>".$imsilist2;
+		}
+		
+		
+		function PrintTime() {   //2021 사순절 1분벨용
+			aup1.loop=false;
+			
+			
+			if(now_sec<=0 ) {
+				$('#b_nowtime').text('다음을 누르세요');
+				} else {
+				$('#b_nowtime').text(now_sec--);
+			}
+		}
+		
+		
+		
+		
+		
+		$(document).on("click", "#btn_bell", function(event){
+			aup1.play();
+			timerId = setInterval(PrintTime, 1000);
+			$('#btn_bell').hide();
+			var fade_settimer_id=setTimeout("$('.btn_next').show('slow');",10000);
+			setTimeout("clearInterval(timerId);",62000);
+		});
+		
+		
+		$(document).on("click", "#btn_sermon", function(event){
+			if($(this).text()=='일시 멈춤') {
+				aup2.pause();
+				$(this).text('계속 듣기');
+				} else {
+				aup2.play();
+				$(this).text('일시 멈춤');
+			}
+			
+		});
+		
+		function change_para() {  // 아이폰에서는 작동 안함...
+			$('.word_change').css('display','none');
+			$('.word_change').eq(0).fadeIn(1000);
+			
+			$('.word_change').each(function (index,item) {
+				
+				if(!!$(item).data('time2') || $(item).data('time2')!=="") {
+					$('.btn_next,#btn_sermon').css('display','none');
+					setTimeout("$('.word_change').eq("+index+").fadeOut(1000);",($(item).data('time2')-1)*1000);
+					setTimeout("$('.word_change').eq("+(index+1)+").fadeIn(1000);",$(item).data('time2')*1000);
+					if(index==1) setTimeout("$('h2,li,hr').fadeOut(1000);",($(item).data('time2')-1)*1000);
+					console.log(index);
+				}
+				if( $('.word_change').length-2==index)  setTimeout("$('.btn_next,#btn_sermon').fadeIn(1000);",$(item).data('time2')*1000);
+			});
+		} 
+		
+		 aup2.onended = function() {
+    $('#btn_sermon').fadeOut(2000);
+};
+	document.onkeyup = function(e) {
+				if (e.which == 17)   isCtrl = false ;
+				if (e.which == 18)   isAlt = false; 
+			 
+				 
+			}
+	document.onkeydown = function(e) {
+				
+				console.log(e.which);
+				
+				 
+				if (e.which == 17) isCtrl = true; 
+				if (e.which == 18)  isAlt = true; 
+				
+			 
+				
+				if (e.which == 80 && isAlt) { // alt + p
+					e.preventDefault();
+					aup2.play();
+					
+				}
+	}
+		
+	</script>
+	
+</body>
 </html>
+
 
